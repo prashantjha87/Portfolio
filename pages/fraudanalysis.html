@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Social Media Page</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand" href="#">My Portfolio</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about-me">About Me</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="socialmedia.html">Social Media</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+				<section id="projects">
+			<div class="container">
+				<div class="row">
+					<div class="----col-lg-6">
+						<div class="card">
+							<br>
+							<br>
+							<br>
+							<div class="card-body">
+								<h3 align="center">Fraud Analysis</h3>
+								<h5 class="card-text">Goal</h5>
+								<p class="card-text">
+								The goal of this project was to find the end-to-end transaction flow, this includes finding the intermediate accounts which
+								involve in that transaction.In this, we had given starting accounts from which the transaction initiated and the date of the transactions.
+								</p>
+								<center><img class="card-img-top" src="../img/fraudanalysis1.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%" ></center>
+								<h5 class="card-text">Result</h5>
+								<p class="card-text">
+								To achieve this goal we had to fetch the data from the data warehouse with a certain condition (i.e Customer Number and 
+								Transaction Date)Once data is fetched then we did some data quality checks.Once we had the clean data we created a data mart(we have used SAS 
+								Data Studio for data mart creation)After that, we created a Sankey Diagram to find out the transaction flow between different accounts in the 
+								given period.
+								</p>
+								<center><img class="card-img-top" src="../img/fraudanalysis2.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%"></center>
+								<br>
+								<a href="#" class="btn btn-primary">More</a>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</section>
