@@ -1,77 +1,225 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* Modern Portfolio Design System 2026 */
+:root {
+    /* Color Palette - Professional Dark Mode */
+    --primary: #6366f1; /* Vibrant Indigo */
+    --primary-dark: #4f46e5;
+    --secondary: #f9fafb; /* Off-white for headings */
+    --accent: #22d3ee; /* Cyan */
+    --background: #111827; /* Dark Slate */
+    --surface: #1f2937; /* Lighter Slate for Cards */
+    --text-main: #f3f4f6; /* Near-white */
+    --text-muted: #9ca3af; /* Light Gray */
+    --border: #374151; /* Subtle Dark Border */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.2);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+    --radius: 0.75rem;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-	scroll-behavior: smooth;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-main);
+    background-color: var(--background);
+    line-height: 1.6;
+    padding-top: 5rem;
 }
 
-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 1;
+/* Typography */
+h1, h2, h3, h4, h5 {
+    color: var(--secondary);
+    font-weight: 700;
+    letter-spacing: -0.025em;
 }
 
-nav ul {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
+.section-heading {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-nav ul li {
-	margin-right: 20px;
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 2px;
 }
 
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	transition: all 0.3s ease;
+/* Navbar */
+.navbar {
+    background-color: rgba(17, 24, 39, 0.9) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    transition: all 0.3s ease;
 }
 
-nav ul li a:hover {
-	transform: translateY(-3px);
+.navbar-brand {
+    font-weight: 800;
+    color: var(--secondary) !important;
+    font-size: 1.4rem;
 }
 
-main {
-	padding: 150px 50px 50px 50px;
+.nav-link {
+    font-weight: 500;
+    color: var(--text-main) !important;
+    margin: 0 0.75rem;
+    position: relative;
+    transition: color 0.2s ease;
 }
 
-section {
-	margin-bottom: 50px;
+.nav-link:hover {
+    color: var(--primary) !important;
 }
 
-h2 {
-	font-size: 2em;
-	margin-bottom: 20px;
-	text-align: center;
+/* Hero Section */
+.hero-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border);
 }
 
-article {
-	margin-bottom: 50px;
-	background-color: #f5
-	
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+/* Cards */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
 }
 
-body {
-	scroll-behavior: smooth;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
 }
 
-header {
-	position
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+}
 
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Badges & Tags */
+.badge-tech {
+    background: #eff6ff;
+    color: var(--primary);
+    border: 1px solid #dbeafe;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* About Section */
+.about-card {
+    border-left: 6px solid var(--primary);
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* Social Icons */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-link {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--secondary);
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary);
+    color: #94a3b8;
+    padding: 4rem 0 2rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.footer-credits {
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+/* Responsive Grid Improvements */
+@media (max-width: 768px) {
+    body { padding-top: 4rem; }
+    .hero-section { padding: 4rem 0; }
+    .section-heading { font-size: 1.75rem; }
+}

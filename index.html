@@ -1,141 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Portfolio</title>
+	<title>Prashant Jha | Analytics & Data Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom Dark Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#">My Portfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#resume">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#socialmedia">Social Media</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>Prashant Jha</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#socialmedia">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-		<section id="projects">
-			<div class="container">
-				<h2>My Projects</h2>
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="card">
-							<img class="card-img-top" src="img/fraudanalysis1.png" alt="fraudanalysis1 Screenshot" width="600" height="300">
-							<div class="card-body">
-								<a href="pages/fraudanalysis.html" class="btn btn-primary">Fraud Analysis</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="card">
-							<img class="card-img-top" src="img/RFM1.png" alt="RFM1 Screenshot" width="600" height="300">
-							<div class="card-body">
-								<a href="pages/rfm.html" class="btn btn-primary">RFM</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="card">
-							<img class="card-img-top" src="img/marketbasket2.png" alt="RFM1 Screenshot" width="600" height="300">
-							<div class="card-body">
-								<a href="pages/marketbasket.html" class="btn btn-primary">Masket Basket</a>
-							</div>
-						</div>
-					</div>
-					<br>
-					<br>
-					<br>
-				</div>
-			</div>
-		</section>
-		<section id="about-me">
-			<div class="container">
-				<div class="row">
-					<div class="card">
-							<div class="card-body">
-								<h3 align="center">About Me</h3>
-							<br>
-							<br>
-								<p class="card-text">
-								Greetings, I am Prashant Jha, a seasoned data management and Analytics professional with extensive experience in SAS, SAS AML, SAS AML Scenarios, SAS Viya, SAS Base, machine learning, Excel, Data analytics, Predictive analytics, Marketing analytics, Dashboard development, KPI tracking, Regression modeling, Market basket analysis, Customer segmentation, and Media Spend optimization.
-							<br>
-							<br>
-								Over the past five years, I have demonstrated proficiency in managing and processing large datasets using advanced tools and techniques. My expertise in SAS programming has enabled me to effectively address complex financial crime risk management challenges by leveraging SAS AML and SAS AML Scenarios.
-							<br>
-							<br>
-								Furthermore, my proficiency in SAS Viya has provided me with advanced skills in data visualization, predictive modeling, and machine learning. My proficiency in Excel has allowed me to develop sophisticated data models, automate workflows, and create comprehensive reports.
-							<br>
-							<br>
-								As an analytics expert, I have developed predictive models and customer segmentation frameworks, utilizing regression modeling and market basket analysis to identify purchase patterns. My experience in media spend optimization has enabled me to help clients maximize their advertising spend by analyzing customer behavior and preferences.
-							<br>
-							<br>
-								In addition, I have developed dashboards and KPIs to monitor performance and provide real-time insights to stakeholders. I am proficient in end-to-end project management, from requirement gathering and data modeling to data processing, analysis, and visualization.
-							<br>
-							<br>
-								I am passionate about leveraging data to solve complex business problems and drive positive change. I am always looking for opportunities to expand my skill set and stay up-to-date with the latest trends and best practices in data management and analytics.
-							<br>
-							<br>
-								Overall, I am a highly analytical and detail-oriented individual who takes great pride in providing clients with high-quality data-driven solutions. I am constantly seeking opportunities to further enhance my skills and knowledge in the field of data analytics.
-							<br>
-							<br>
-								Thank you for taking the time to read my about me section. If you would like to learn more about my skills and experience, please feel free to reach out to me.
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="resume">
-			<div class="container">
-				<div class="row">
-					<div class="card">
-							<div class="card-body">
-								<h3 align="center">Resume</h3>
-								<p class="card-text">
-								<p style="color:white">----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-								<center><embed src="img/Prashant's_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="75%" height="700px" /></center>
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="socialmedia">
-			<div class="container">
-				<h2>Social Media</h2>
-				<center><a href="https://github.com/prashantjha87"><img class="card-img-top" src="img/github.png" alt="Project 1 Screenshot" style="width: 3%; height: 3%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://instagram.com/prashant_jha97"><img class="card-img-top" src="img/Instagram.png" alt="Project 2 Screenshot" style="width: 3%; height: 3%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="#"><img class="card-img-top" src="img/medium.png" alt="Project 3 Screenshot" style="width: 3%; height: 3%"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<a href="https://www.linkedin.com/in/prashantjha00/"><img class="card-img-top" src="img/linkedin.png" alt="Project 4 Screenshot" style="width: 3%; height: 3%"></a></center>
 
+	<main class="container my-5 pt-4">
+		<!-- Hero Section -->
+		<section class="hero-section py-5 text-center rounded-3 mb-5 px-3">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<h1 class="display-5 fw-bold text-light mb-3">Senior Data Management & Analytics Professional</h1>
+					<p class="lead text-muted mb-4">Leveraging SAS AML, SAS Viya, Predictive Analytics, & Machine Learning to drive actionable business insights and combat financial crime.</p>
+					<div class="d-flex justify-content-center gap-3">
+						<a href="#projects" class="btn btn-primary btn-lg px-4">Explore Projects</a>
+						<button class="btn btn-outline-light btn-lg px-4" data-bs-toggle="modal" data-bs-target="#resumeModal">View Resume</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-				
+		<!-- Projects Section -->
+		<section id="projects" class="mb-5">
+			<h2 class="section-heading fw-bold mb-4">Featured Projects</h2>
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100 bg-surface text-light border-secondary">
+						<img class="card-img-top" src="img/fraudanalysis1.png" alt="Fraud Analysis Screenshot">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title fw-bold text-light">Fraud Transaction Flow Analysis</h5>
+							<p class="card-text text-muted flex-grow-1">End-to-end multi-hop transaction tracing and Sankey visualization for financial crime risk mitigation.</p>
+							<div class="mt-3">
+								<span class="badge-tech">SAS AML</span>
+								<span class="badge-tech">SAS Data Studio</span>
+								<span class="badge-tech">Sankey Diagram</span>
+							</div>
+							<a href="pages/fraudanalysis.html" class="btn btn-primary mt-3 w-100">Explore Case Study</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100 bg-surface text-light border-secondary">
+						<img class="card-img-top" src="img/RFM1.png" alt="RFM Screenshot">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title fw-bold text-light">RFM Customer Segmentation</h5>
+							<p class="card-text text-muted flex-grow-1">Advanced 3D customer grouping based on Recency, Frequency, and Monetary parameters to optimize targeted marketing.</p>
+							<div class="mt-3">
+								<span class="badge-tech">Customer Segmentation</span>
+								<span class="badge-tech">SAS Viya</span>
+								<span class="badge-tech">Predictive Analytics</span>
+							</div>
+							<a href="pages/rfm.html" class="btn btn-primary mt-3 w-100">Explore Case Study</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 col-lg-4">
+					<div class="card h-100 bg-surface text-light border-secondary">
+						<img class="card-img-top" src="img/marketbasket2.png" alt="Market Basket Screenshot">
+						<div class="card-body d-flex flex-column">
+							<h5 class="card-title fw-bold text-light">Market Basket & Cross-Selling</h5>
+							<p class="card-text text-muted flex-grow-1">Association rule mining to discover shopping patterns and generate automated cross-sell recommendations.</p>
+							<div class="mt-3">
+								<span class="badge-tech">Association Rules</span>
+								<span class="badge-tech">Retail Analytics</span>
+								<span class="badge-tech">Data Mining</span>
+							</div>
+							<a href="pages/marketbasket.html" class="btn btn-primary mt-3 w-100">Explore Case Study</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- About Me Section -->
+		<section id="about-me" class="my-5">
+			<div class="card p-4 p-md-5 bg-surface border-secondary about-card">
+				<h2 class="section-heading fw-bold mb-4">About Me</h2>
+				<div class="about-text">
+					<p>Greetings! I am <strong>Prashant Jha</strong>, a seasoned Data Management and Analytics professional with extensive expertise across SAS, SAS AML, SAS AML Scenarios, SAS Viya, Machine Learning, Excel modeling, and Enterprise Data Analytics.</p>
+
+					<p>With over eight years of hands-on experience, I specialize in managing and processing large-scale datasets, building robust predictive analytics frameworks, developing KPI dashboards, and designing targeted customer segmentation models. My core domain strength lies in anti-money laundering (AML) and financial crime risk management, where I leverage SAS AML Scenarios to identify anomalies and protect financial ecosystems.</p>
+
+					<p class="fw-semibold text-light mt-4">Key Areas of Expertise:</p>
+					<div class="row my-3">
+						<div class="col-md-6">
+							<ul class="text-muted">
+								<li><strong>Financial Crime & AML:</strong> SAS AML Scenarios, Fraud Analysis, Transaction Tracing</li>
+								<li><strong>Machine Learning & Analytics:</strong> Regression Modeling, Market Basket Analysis, Customer Segmentation</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul class="text-muted">
+								<li><strong>Data Platforms:</strong> SAS Viya, SAS Studio, SQL Data Warehousing</li>
+								<li><strong>Business Impact:</strong> Media Spend Optimization, Interactive KPI Dashboards</li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="mt-4">I am passionate about converting raw data into strategic business value and am continuously adapting to modern AI and cloud analytics ecosystems.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Social & Contact Section -->
+		<section id="socialmedia" class="text-center my-5 py-5">
+			<h2 class="section-heading fw-bold mb-4">Connect With Me</h2>
+			<div class="social-links mt-4">
+				<a href="https://github.com/prashantjha87" target="_blank" class="social-link" title="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/prashantjha00/" target="_blank" class="social-link" title="LinkedIn">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://instagram.com/prashant_jha97" target="_blank" class="social-link" title="Instagram">
+					<i class="fab fa-instagram"></i>
+				</a>
+				<a href="mailto:prashant.jha8700@gmail.com" class="social-link" title="Email Me">
+					<i class="fas fa-envelope"></i>
+				</a>
 			</div>
 		</section>
 	</main>
-		<footer>
-		<font size="-2"><p>&nbsp;&nbsp;&nbsp;Created by Prashant. © 2022</p></font>
-		</footer>
+
+	<!-- Resume Modal -->
+	<div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content bg-surface text-light border-secondary">
+				<div class="modal-header border-secondary">
+					<h5 class="modal-title fw-bold" id="resumeModalLabel"><i class="fa-solid fa-file-pdf text-danger me-2"></i>Prashant Jha - Resume</h5>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body p-0" style="height: 75vh;">
+					<iframe src="img/Prashant's_Resume.pdf" width="100%" height="100%" style="border: none;"></iframe>
+				</div>
+				<div class="modal-footer border-secondary">
+					<a href="img/Prashant's_Resume.pdf" download class="btn btn-primary"><i class="fa-solid fa-download me-2"></i>Download Resume</a>
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<p class="mb-0">Designed & Developed by Prashant Jha &copy; 2026. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Bootstrap 5 JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
