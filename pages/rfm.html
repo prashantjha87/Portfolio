@@ -1,77 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Social Media Page</title>
+	<title>RFM Customer Segmentation | Case Study</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom Dark Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#">My Portfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="socialmedia.html">Social Media</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="../index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>Prashant Jha</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#socialmedia">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-				<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="----col-lg-6">
-						<div class="card">
-							<br>
-							<br>
-							<br>
-							<div class="card-body">
-								<h3 align="center">RFM Segmentation</h3>
-								<h5 class="card-text">The Problem</h5>
-								<p class="card-text">
-								Nowadays where the industries are battling cutthroat competition to keep their target customer intact and establish a 
-								new customer base, one of our clients wanted to adopt a strategic approach to market their business. <br> <br>	They faltered to find the right customer 
-								base to market and sell their goods.<br><br>	We helped him to offer and intently analyze the buying habits of his target customers and discern what his 
-								customers were looking to buy or what they would buy in the future, through thorough study and summarization of the charts and graphs of their 
-								buying habits. This analysis technique gave them an edge over their competitors in the industry.
-								</p>
-								<center><img class="card-img-top" src="../img/RFM1.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%" ></center>
-								<h5 class="card-text">Solution</h5>
-								<p class="card-text">
-								Implementing RFM based customer segmentation
-								We used our analytical techniques to identify the purchasing patterns through the customer segmentation model. <br>	<br>	Through this model, we focused on 
-								categorizing the customers based on three key performance indicators, also known as KPI, mentioned below.<br><br>	
-								1. Recency- It analyzes the freshness of a customer’s activities in terms of its purchase and visits.<br>								
-								2. Frequency- which answers the question – how often does a customer purchase from your business?	<br>							
-								3. The monetary indicator is the purchasing power of the customer.<br><br>																								
-								Analyzing these factors helped our client to categorize his customer base into different segments. By understanding these factors, our client judiciously planned his marketing strategy to target his different customer segments. This empowered him to serve his customers with precisely what they are looking to buy, when they are looking to make a purchase and how he can convince customers to make a purchase.<br><br>										
-								We helped our client to identify his customers and segregate them based on their purchasing activities. This allowed him to strategize his marketing activities and plan ways to revive the purchasing activities for each of the customer clusters. <br><br>		
 
-								Based on the customers’ purchasing activity, we broadly categorized them into the following:RFM Customer Segmentation To perform RFM analysis, we divide customers into four equal groups according to the distribution of values for recency, frequency, and monetary value.<br>	
+	<main class="container my-5 pt-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<nav aria-label="breadcrumb" class="mb-4">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+				    <li class="breadcrumb-item"><a href="../index.html#projects" class="text-decoration-none">Projects</a></li>
+				    <li class="breadcrumb-item active text-muted" aria-current="page">RFM Segmentation</li>
+				  </ol>
+				</nav>
 
-								Four equal groups across three variables create 64 (4x4x4) different customer segments.
-								</p>
-								<a href="#" class="btn btn-primary">More</a>
-							</div>
-						</div>
+				<article class="card p-4 p-md-5 bg-surface text-light border-secondary">
+					<h1 class="fw-bold mb-3 text-light">RFM Customer Segmentation</h1>
+					<p class="text-muted mb-4">Leveraging Recency, Frequency, and Monetary analytics in SAS Viya to categorize customers into 64 distinct clusters and drive precision marketing.</p>
+
+					<div class="mb-4">
+						<span class="badge-tech">Customer Segmentation</span>
+						<span class="badge-tech">SAS Viya</span>
+						<span class="badge-tech">Predictive Analytics</span>
+						<span class="badge-tech">Marketing Strategy</span>
 					</div>
-				</div>
+
+					<hr class="border-secondary my-4">
+
+					<h3 class="fw-bold text-light mt-3"><i class="fa-solid fa-bullseye text-primary me-2"></i>The Challenge</h3>
+					<p class="text-muted">In today's highly competitive retail and e-commerce landscape, businesses frequently struggle to identify their highest-value customer segments and target marketing campaigns effectively. Our client faced declining campaign ROIs and lacked granular visibility into customer buying habits, leading to blanket promotional spending with minimal conversion.</p>
+
+					<div class="text-center my-4">
+						<img class="img-fluid rounded border border-secondary shadow-sm" src="../img/RFM1.png" alt="RFM Distribution Model" style="max-height: 400px;">
+						<p class="text-muted small mt-2">Figure 1: RFM score distribution across customer segments.</p>
+					</div>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-gears text-primary me-2"></i>Solution & Methodology</h3>
+					<p class="text-muted">We developed an advanced RFM (Recency, Frequency, Monetary) segmentation engine using analytics platforms to score and categorize the entire customer database:</p>
+					<ul class="lh-lg text-muted">
+						<li><strong>Recency (R):</strong> Evaluated how recently a customer interacted with the brand through purchases or site visits.</li>
+						<li><strong>Frequency (F):</strong> Quantified purchase frequency to measure customer loyalty and engagement cadence.</li>
+						<li><strong>Monetary Value (M):</strong> Measured total spend to identify high-net-worth VIP buyers.</li>
+					</ul>
+					<p class="text-muted">By dividing each of the three dimensions into four equal distribution quartiles, we created <strong>64 distinct customer clusters</strong> (4x4x4 matrix). This allowed the client to tailor bespoke marketing retention strategies for champions, loyalists, at-risk churners, and dormant accounts.</p>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-chart-line text-primary me-2"></i>Business Impact & Key Outcomes</h3>
+					<ul class="lh-lg text-muted">
+						<li><strong>Optimized Marketing Spend:</strong> Reallocated promotional budget away from low-yield broad campaigns toward hyper-targeted segment offers.</li>
+						<li><strong>Reduced Churn Rate:</strong> Successfully re-engaged at-risk high-monetary customers through automated win-back retention sequences.</li>
+						<li><strong>Increased Customer Lifetime Value (LTV):</strong> Improved cross-sell conversion rates by delivering personalized product recommendations aligned with segment purchasing behavior.</li>
+					</ul>
+
+					<div class="mt-5 text-center">
+						<a href="../index.html#projects" class="btn btn-outline-light"><i class="fa-solid fa-arrow-left me-2"></i>Back to All Projects</a>
+					</div>
+				</article>
 			</div>
-		</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container text-center">
+			<p class="mb-0">Designed & Developed by Prashant Jha &copy; 2026. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

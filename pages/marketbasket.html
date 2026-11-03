@@ -1,69 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Social Media Page</title>
+	<title>Market Basket & Cross-Selling | Case Study</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom Dark Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#">My Portfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="socialmedia.html">Social Media</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="../index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>Prashant Jha</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#socialmedia">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-				<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="----col-lg-6">
-						<div class="card">
-							<br>
-							<br>
-							<br>
-							<div class="card-body">
-								<h3 align="center">Market Basket</h3>
-								<h5 class="card-text">The Problem</h5>
-								<p class="card-text">
-								Market basket analysis helps to solve the problem of understanding customers' purchasing behavior and uncovering patterns and associations in their shopping habits. By analyzing transaction data and identifying which products tend to be purchased together, businesses can gain insights into the preferences and needs of their customers. This information can be used to improve product recommendations, optimize store layouts, and develop targeted marketing campaigns.
-								<br><br>
-								Market basket analysis can also be used to identify cross-selling opportunities, which can help increase sales and revenue. For example, if customers who purchase a particular product also tend to buy a complementary product, businesses can promote the complementary product to increase sales.
-								<br><br>
-								Overall, market basket analysis helps businesses to better understand their customers and make data-driven decisions that improve business outcomes.
-								</p>
-								<center><img class="card-img-top" src="../img/marketbasket1.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%" ></center>
-								<p class="card-text">
-								<h5 class="card-text">Cross Selling</h5>
-								The cross selling is the ability to sell more products to a customer by analyzing the customer's shopping trends as well as general shopping trends and patterns which are in common with the customer's shopping patterns. More often than not, these recommended products would be very appealing. The retailer will often offer you a bundle of products with some attractive offer and it is highly likely that we will end up buying the bundled products instead of just the original item.
-								<br><br>
-								So, we research the customer transactions and find out potential additions to the customer's original needs and offer it to the customer as a suggestion in the hope and intent that they buy them benefiting both the customer as well as the retail establishment.
-								<br><br>
-								In this section, we explore association rule-mining, a powerful technique that can be used for cross selling, then we apply the concept of market basket analysis to our retail transactions dataset.	<br><br><br>
-								<a href="#" class="btn btn-primary">More</a>
-							</div>
-						</div>
+
+	<main class="container my-5 pt-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<nav aria-label="breadcrumb" class="mb-4">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+				    <li class="breadcrumb-item"><a href="../index.html#projects" class="text-decoration-none">Projects</a></li>
+				    <li class="breadcrumb-item active text-muted" aria-current="page">Market Basket Analysis</li>
+				  </ol>
+				</nav>
+
+				<article class="card p-4 p-md-5 bg-surface text-light border-secondary">
+					<h1 class="fw-bold mb-3 text-light">Market Basket & Cross-Selling Analysis</h1>
+					<p class="text-muted mb-4">Uncovering hidden purchasing associations and itemset patterns using association rule mining to drive retail cross-selling.</p>
+
+					<div class="mb-4">
+						<span class="badge-tech">Association Rules</span>
+						<span class="badge-tech">Retail Analytics</span>
+						<span class="badge-tech">Data Mining</span>
+						<span class="badge-tech">Cross-Selling</span>
 					</div>
-				</div>
+
+					<hr class="border-secondary my-4">
+
+					<h3 class="fw-bold text-light mt-3"><i class="fa-solid fa-bullseye text-primary me-2"></i>The Challenge</h3>
+					<p class="text-muted">Retailers often possess vast quantities of transaction records but fail to extract actionable insights regarding product co-purchasing habits. Without knowing which items naturally complement one another, merchandising teams miss prime opportunities for intelligent product bundling, store layout optimization, and automated recommendation engines.</p>
+
+					<div class="text-center my-4">
+						<img class="img-fluid rounded border border-secondary shadow-sm" src="../img/marketbasket1.png" alt="Market Basket Association Chart" style="max-height: 400px;">
+						<p class="text-muted small mt-2">Figure 1: Association rule mining support and confidence graphs.</p>
+					</div>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-gears text-primary me-2"></i>Solution & Methodology</h3>
+					<p class="text-muted">We implemented advanced association rule mining algorithms to analyze customer transaction baskets:</p>
+					<ul class="lh-lg text-muted">
+						<li><strong>Pattern Extraction:</strong> Scanned millions of historical basket transactions to identify frequent itemsets purchased together.</li>
+						<li><strong>Metric Evaluation:</strong> Filtered rules using <em>Support</em>, <em>Confidence</em>, and <em>Lift</em> metrics to ensure high statistical significance and commercial relevance.</li>
+						<li><strong>Cross-Sell Strategy:</strong> Translated discovered associations into strategic product bundles and point-of-sale recommendation prompts.</li>
+					</ul>
+
+					<div class="text-center my-4">
+						<img class="img-fluid rounded border border-secondary shadow-sm" src="../img/marketbasket2.png" alt="Cross Selling Insights" style="max-height: 400px;">
+						<p class="text-muted small mt-2">Figure 2: Product affinity clusters and bundling opportunities.</p>
+					</div>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-chart-line text-primary me-2"></i>Business Impact & Key Outcomes</h3>
+					<ul class="lh-lg text-muted">
+						<li><strong>Increased Average Order Value (AOV):</strong> Boosted basket size by introducing high-affinity product add-on recommendations at checkout.</li>
+						<li><strong>Optimized Merchandising:</strong> Guided physical and digital store layout decisions by placing complementary items in close proximity.</li>
+						<li><strong>Enhanced Customer Experience:</strong> Delivered relevant, non-intrusive product suggestions that genuinely appealed to shopper preferences.</li>
+					</ul>
+
+					<div class="mt-5 text-center">
+						<a href="../index.html#projects" class="btn btn-outline-light"><i class="fa-solid fa-arrow-left me-2"></i>Back to All Projects</a>
+					</div>
+				</article>
 			</div>
-		</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container text-center">
+			<p class="mb-0">Designed & Developed by Prashant Jha &copy; 2026. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

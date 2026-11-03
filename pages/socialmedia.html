@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Social Media Page</title>
+	<title>Social Media | Prashant Jha</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom Dark Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="../index.html">My Portfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="socialmedia.html">Social Media</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="../index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>Prashant Jha</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#socialmedia">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-	<br>
-	<br>
-	<br>
+
+	<main class="container my-5 pt-5 text-center">
+		<h1 class="fw-bold mb-4">Connect With Me</h1>
+		<p class="text-muted mb-5">Find me on other platforms to follow my latest analytics insights and projects.</p>
+
+		<div class="social-links justify-content-center">
+			<a href="https://github.com/prashantjha87" target="_blank" class="social-link" title="GitHub">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/prashantjha00/" target="_blank" class="social-link" title="LinkedIn">
+				<i class="fab fa-linkedin-in"></i>
+			</a>
+			<a href="https://instagram.com/prashant_jha97" target="_blank" class="social-link" title="Instagram">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="mailto:prashant.jha8700@gmail.com" class="social-link" title="Email Me">
+				<i class="fas fa-envelope"></i>
+			</a>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container text-center mt-5">
+			<p class="mb-0">Designed & Developed by Prashant Jha &copy; 2026. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

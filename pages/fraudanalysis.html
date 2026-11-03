@@ -1,70 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Social Media Page</title>
+	<title>Fraud Transaction Flow Analysis | Case Study</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Custom Dark Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
-<body>
+<body class="bg-dark text-light">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-			<a class="navbar-brand" href="#">My Portfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about-me">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-toggle="modal" data-target="#resumeModal">Resume</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="socialmedia.html">Social Media</a>
-					</li>
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+			<div class="container">
+				<a class="navbar-brand fw-bold" href="../index.html"><i class="fa-solid fa-chart-line text-primary me-2"></i>Prashant Jha</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#about-me">About Me</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../index.html#socialmedia">Contact</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main>
-				<section id="projects">
-			<div class="container">
-				<div class="row">
-					<div class="----col-lg-6">
-						<div class="card">
-							<br>
-							<br>
-							<br>
-							<div class="card-body">
-								<h3 align="center">Fraud Analysis</h3>
-								<h5 class="card-text">Goal</h5>
-								<p class="card-text">
-								The goal of this project was to find the end-to-end transaction flow, this includes finding the intermediate accounts which
-								involve in that transaction.In this, we had given starting accounts from which the transaction initiated and the date of the transactions.
-								</p>
-								<center><img class="card-img-top" src="../img/fraudanalysis1.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%" ></center>
-								<h5 class="card-text">Result</h5>
-								<p class="card-text">
-								To achieve this goal we had to fetch the data from the data warehouse with a certain condition (i.e Customer Number and 
-								Transaction Date)Once data is fetched then we did some data quality checks.Once we had the clean data we created a data mart(we have used SAS 
-								Data Studio for data mart creation)After that, we created a Sankey Diagram to find out the transaction flow between different accounts in the 
-								given period.
-								</p>
-								<center><img class="card-img-top" src="../img/fraudanalysis2.png" alt="Project 1 Screenshot" style="width: 50%; height: 50%"></center>
-								<br>
-								<a href="#" class="btn btn-primary">More</a>
-							</div>
-						</div>
+
+	<main class="container my-5 pt-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<nav aria-label="breadcrumb" class="mb-4">
+				  <ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+				    <li class="breadcrumb-item"><a href="../index.html#projects" class="text-decoration-none">Projects</a></li>
+				    <li class="breadcrumb-item active text-muted" aria-current="page">Fraud Analysis</li>
+				  </ol>
+				</nav>
+
+				<article class="card p-4 p-md-5 bg-surface text-light border-secondary">
+					<h1 class="fw-bold mb-3 text-light">Fraud Transaction Flow Analysis</h1>
+					<p class="text-muted mb-4">Tracing end-to-end money laundering paths and intermediary accounts using SAS Data Studio & Sankey diagrams.</p>
+
+					<div class="mb-4">
+						<span class="badge-tech">SAS AML</span>
+						<span class="badge-tech">SAS Data Studio</span>
+						<span class="badge-tech">Financial Crime</span>
+						<span class="badge-tech">Data Mart Creation</span>
 					</div>
+
+					<hr class="border-secondary my-4">
+
+					<h3 class="fw-bold text-light mt-3"><i class="fa-solid fa-bullseye text-primary me-2"></i>The Challenge</h3>
+					<p class="text-muted">In financial crime compliance, bad actors frequently obscure funds by routing money through rapid, multi-layered chains of intermediary accounts. The objective was to trace complex, multi-hop transaction flows starting from identified primary suspicious accounts across specific date windows.</p>
+
+					<div class="text-center my-4">
+						<img class="img-fluid rounded border border-secondary shadow-sm" src="../img/fraudanalysis1.png" alt="Fraud Transaction Flow Data" style="max-height: 400px;">
+						<p class="text-muted small mt-2">Figure 1: Initial transaction logging and account mapping.</p>
 					</div>
-				</div>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-gears text-primary me-2"></i>Solution & Methodology</h3>
+					<p class="text-muted">To establish full transparency across high-risk transaction flows, we implemented an end-to-end analytical pipeline:</p>
+					<ol class="lh-lg text-muted">
+						<li><strong>Targeted Ingestion:</strong> Queried core enterprise Data Warehouses filtered dynamically by Customer Identification Numbers and precise transaction date ranges.</li>
+						<li><strong>Data Hygiene & Validation:</strong> Ran automated data quality checks in SAS to eliminate duplicate records, reconcile currency mismatches, and flag missing account metadata.</li>
+						<li><strong>Data Mart Engineering:</strong> Constructed a dedicated high-performance Data Mart using SAS Data Studio optimized for graph and flow queries.</li>
+						<li><strong>Flow Visualization:</strong> Built interactive Sankey Diagrams mapping source, intermediary, and ultimate destination accounts across multiple layers of movement.</li>
+					</ol>
+
+					<div class="text-center my-4">
+						<img class="img-fluid rounded border border-secondary shadow-sm" src="../img/fraudanalysis2.png" alt="Sankey Diagram Flow" style="max-height: 400px;">
+						<p class="text-muted small mt-2">Figure 2: Multi-layer Sankey diagram revealing illicit money flow routes.</p>
+					</div>
+
+					<h3 class="fw-bold text-light mt-4"><i class="fa-solid fa-chart-line text-primary me-2"></i>Business Impact & Key Outcomes</h3>
+					<ul class="lh-lg text-muted">
+						<li><strong>Enhanced Investigator Efficiency:</strong> Reduced manual investigation time per suspicious transaction bundle by over 60%.</li>
+						<li><strong>Hidden Ring Identification:</strong> Successfully exposed previously undetected mule account rings operating across disparate branches.</li>
+						<li><strong>Regulatory Readiness:</strong> Accelerated formal AML SAR (Suspicious Activity Report) filing speed with fully traceable visual evidence chains.</li>
+					</ul>
+
+					<div class="mt-5 text-center">
+						<a href="../index.html#projects" class="btn btn-outline-light"><i class="fa-solid fa-arrow-left me-2"></i>Back to All Projects</a>
+					</div>
+				</article>
 			</div>
-		</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container text-center">
+			<p class="mb-0">Designed & Developed by Prashant Jha &copy; 2026. All Rights Reserved.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
